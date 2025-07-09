@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(126, 123, 123);
+}
+.button{
+    background-color: rgb(106, 179, 248);
+    box-shadow: 3px 3px 5px rgb(4, 14, 107);
+    padding: 10px 20px;
+    text-align: center; 
+    font-size: 1.2em;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: border-color 1s, background-color 0.3s, color 0.5s, box-shadow 0.5s;
+}
+.button:hover{
+    background-color: rgb(14, 55, 73);
+    border-color: chartreuse;
+    color: chartreuse;
+    box-shadow: 3px 3px 5px rgb(223, 166, 10);
+}
+.button:active{
+    background-color: rgb(49, 165, 214);
+    border-color: chartreuse;
+    color: chartreuse;
+    box-shadow: 3px 3px 5px rgb(146, 204, 10);
+}
+
+#container{
+    text-align: center;
+}
+
+#countLabel{
+    font-size: 10em;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(71, 69, 65);
+    display: block;
+    text-align: center;
+}
