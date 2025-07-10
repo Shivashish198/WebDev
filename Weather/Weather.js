@@ -15,6 +15,9 @@ async function display(){
         let response = await fetch(url);
         if(!response.ok) {
             div.style.display="block";
+            cityP.textContent = "";
+            tempP.textContent = "";
+            descP.textContent = "";
             error.textContent = `Could not fetch data for ${cityInput.value}`;
             return;
         }
