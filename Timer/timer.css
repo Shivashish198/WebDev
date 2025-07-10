@@ -2,7 +2,7 @@ html, body{
     height: 100%;
 }
 body{
-    background-image: url("building.webp");
+    background-image: url("../Stopwatch/building.webp");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
