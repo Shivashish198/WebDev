@@ -1,14 +1,35 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Ubuntu:wght@400;500;700&display=swap');
+
+html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
+<<<<<<< HEAD
 body{
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
     text-align: center;
     font-family: 'Roboto', sans-serif;
+=======
+
+body {
+    background: linear-gradient(120deg, rgba(10, 10, 30, 0.85), rgba(0, 0, 50, 0.85)),
+                url("building.webp") center/cover no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+>>>>>>> 635e44fe0b58498d7eae0516bb760fea618eeb42
 }
-h1{
-    margin-top: 0%;
+
+/* Title */
+h1 {
+    margin-top: 0;
     font-size: 4em;
+<<<<<<< HEAD
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -52,3 +73,90 @@ input{
     padding: 10px;
     text-shadow: 0 0 10px #00ff88;
 }
+=======
+    color: #00cfff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Stopwatch display */
+p, input {
+    font-size: 6em;
+    color: #00eaff;
+    font-family: 'Orbitron', monospace;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 50px;
+    margin: 20px 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+p:hover, input:hover {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+}
+
+/* Buttons */
+button {
+    background: rgba(0, 0, 60, 0.8);
+    color: #00eaff;
+    border: 2px solid #00eaff;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background: #00eaff;
+    color: #000;
+    box-shadow: 0 0 25px #00eaff, 0 0 50px rgba(0, 255, 255, 0.5);
+    transform: scale(1.08);
+}
+
+/* Subtle glow animation for timer */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+}
+
+p, input {
+    animation: pulse 3s infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p, input {
+        font-size: 3em;
+        padding: 10px 30px;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px 25px;
+    }
+}
+>>>>>>> 635e44fe0b58498d7eae0516bb760fea618eeb42
