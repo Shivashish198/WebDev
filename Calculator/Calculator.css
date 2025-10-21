@@ -4,44 +4,47 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(143, 160, 160);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Roboto', sans-serif;
 }
 #calc{
-    background-color: rgb(44, 40, 40);
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    border-radius: 15px;
+    background-color: #000;
+    border-radius: 20px;
     max-width: 260px;
     text-align: center;
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 input{
     width: 230px;
     height: 45px;
-    font-size: 3em;
-    background-color: black;
-    color: rgb(16, 204, 16);
-    font-family: monospace;
-    text-align: left;
-    padding: 5px;
+    font-size: 2.5em;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: right;
+    padding: 5px 15px;
     margin-top: 10px;
     border-radius: 15px;
+    border: none;
+    outline: none;
 }
 button{
-    font-size: 1.8em;
-    font-family: monospace;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     margin: 3px;
-    border-radius: 50px;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     text-align: center;
-    color: aliceblue;
-    background-color: #535050;
+    color: #fff;
+    background-color: #666;
     border: none;
-    font-weight: bolder;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 #keys{
     display: grid;
@@ -50,16 +53,15 @@ button{
     gap: 5px;
 }
 button:hover{
-    background-color: #8a8585;
-    color: rgb(63, 62, 62);
+    background-color: #888;
+    transform: scale(1.05);
 }
 button:active{
-    border: 5px solid chartreuse;
+    transform: scale(0.95);
 }
 .op{
-    background-color: rgb(23, 163, 10);
+    background-color: #ff9500;
 }
 .op:hover{
-    background-color: #77e261;
-    color: rgb(16, 121, 3);
+    background-color: #ffb84d;
 }
