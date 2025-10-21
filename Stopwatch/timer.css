@@ -5,6 +5,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
+body{
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+=======
 
 body {
     background: linear-gradient(120deg, rgba(10, 10, 30, 0.85), rgba(0, 0, 50, 0.85)),
@@ -16,12 +22,58 @@ body {
     justify-content: center;
     backdrop-filter: blur(6px);
     overflow: hidden;
+>>>>>>> 635e44fe0b58498d7eae0516bb760fea618eeb42
 }
 
 /* Title */
 h1 {
     margin-top: 0;
     font-size: 4em;
+<<<<<<< HEAD
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-size: 8em;
+    color: #00ff88;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 20px;
+    text-shadow: 0 0 10px #00ff88;
+}
+button{
+    color: #00ff88;
+    background-color: #1a1a2e;
+    font-size: 1.8em;
+    padding: 12px 24px;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #00ff88;
+    color: #1a1a2e;
+    box-shadow: 0 0 15px #00ff88;
+    transform: scale(1.05);
+}
+input{
+    font-size: 5.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #00ff88;
+    text-align: center;
+    background-color: rgba(26, 26, 46, 0.8);
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 0 0 10px #00ff88;
+}
+=======
     color: #00cfff;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -107,3 +159,4 @@ p, input {
         padding: 10px 25px;
     }
 }
+>>>>>>> 635e44fe0b58498d7eae0516bb760fea618eeb42
